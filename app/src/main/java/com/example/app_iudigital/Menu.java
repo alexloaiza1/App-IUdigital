@@ -34,5 +34,14 @@ public class Menu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button salir = findViewById(R.id.btnSalir);
+        salir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(Menu.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

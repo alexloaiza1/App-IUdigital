@@ -37,5 +37,13 @@
         android:layout_height="wrap_content"
         android:text="Lista de Estudiantes"></Button>
 
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salir"></Button>
+
+
+
 
 </LinearLayout>
