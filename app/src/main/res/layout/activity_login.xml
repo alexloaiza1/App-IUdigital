@@ -41,6 +41,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="DOCENTE"
         android:id="@+id/txtUsuario"></EditText>
 
     </LinearLayout>
@@ -60,6 +61,8 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="12345"
+            android:inputType="textPassword"
             android:id="@+id/txtContraseña"></EditText>
 
     </LinearLayout>
@@ -72,7 +75,7 @@
 
         <Button
             android:id="@+id/btnEntrar"
-            android:layout_width="410dp"
+            android:layout_width="411dp"
             android:layout_height="wrap_content"
             android:text="Entrar"></Button>
 
