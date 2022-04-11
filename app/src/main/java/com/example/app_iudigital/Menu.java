@@ -25,5 +25,14 @@ public class Menu extends AppCompatActivity {
                 Toast.makeText(Menu.this, "Ingresando a registro de estudiante", Toast.LENGTH_LONG).show();
             }
         });
+
+        Button listado = findViewById(R.id.btnListaEstudiante);
+        listado.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(Menu.this, ListadoEstudiantes.class);
+                startActivity(intent);
+            }
+        });
     }
 }
