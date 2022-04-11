@@ -71,51 +71,6 @@ public class DbEstudiantes extends DbHelper {
         return listaEstudiantes;
     }
 
-    public Estudiantes verEstudiante(int id) {
 
-        DbHelper dbHelper = new DbHelper(context);
-        SQLiteDatabase db = dbHelper.getWritableDatabase();
-
-        Estudiantes estudiante = null;
-        Cursor cursorEstudiantes;
-
-        cursorEstudiantes = db.rawQuery("SELECT * FROM " + TABLE_ESTUDIANTES + " WHERE id = " + id + " LIMIT 1", null);
-
-        if (cursorEstudiantes.moveToFirst()) {
-            estudiante = new Estudiantes();
-            estudiante.setId(cursorEstudiantes.getInt(0));
-            estudiante.setNombre(cursorEstudiantes.getString(1));
-            estudiante.setDocumento(cursorEstudiantes.getString(2));
-            estudiante.setPrograma(cursorEstudiantes.getString(3));
-            estudiante.setEmail(cursorEstudiantes.getString(4));
-
-        }
-
-        cursorEstudiantes.close();
-
-        return estudiante;
-    }
-
-
-
-    public boolean eliminarEstudiante(int id) {
-
-        boolean correcto = false;
-
-        DbHelper dbHelper = new DbHelper(context);
-        SQLiteDatabase db = dbHelper.getWritableDatabase();
-
-        try {
-            db.execSQL("DELETE FROM " + TABLE_ESTUDIANTES + " WHERE id = '" + id + "'");
-            correcto = true;
-        } catch (Exception ex) {
-            ex.toString();
-            correcto = false;
-        } finally {
-            db.close();
-        }
-
-        return correcto;
-    }
 }
 
