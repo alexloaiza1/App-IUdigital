@@ -19,7 +19,7 @@ public class registroUsuario extends AppCompatActivity {
         volver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent (v.getContext(), LoginActivity.class);
+                Intent intent = new Intent (v.getContext(), Menu.class);
                 startActivityForResult(intent, 0);
             }
         });

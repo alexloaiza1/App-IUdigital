@@ -72,15 +72,11 @@
 
         <Button
             android:id="@+id/btnEntrar"
-            android:layout_width="210dp"
+            android:layout_width="410dp"
             android:layout_height="wrap_content"
             android:text="Entrar"></Button>
 
-        <Button
-            android:id="@+id/btnRegistrar"
-            android:layout_width="210dp"
-            android:layout_height="wrap_content"
-            android:text="registrarme"></Button>
+
 
     </LinearLayout>
 

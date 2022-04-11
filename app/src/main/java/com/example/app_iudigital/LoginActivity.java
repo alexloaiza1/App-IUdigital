@@ -36,7 +36,7 @@ public class LoginActivity extends AppCompatActivity {
                 String docente=usuario.getText().toString();
                 String password=contraseña.getText().toString();
                 if (docente.equals(user)&& password.equals(pass)) {
-                    Intent intent  = new Intent(LoginActivity.this,registroUsuario.class) ;
+                    Intent intent  = new Intent(LoginActivity.this,Menu.class) ;
                     startActivity(intent);
                 }else{
                     Toast.makeText(LoginActivity.this, "Usuario y/o Contraseña incorrectos", Toast.LENGTH_LONG).show();

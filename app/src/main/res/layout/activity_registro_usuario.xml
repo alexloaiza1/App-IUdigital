@@ -131,7 +131,7 @@
             android:id="@+id/btnvolverInicio"
             android:layout_width="221dp"
             android:layout_height="wrap_content"
-            android:text="Volver al inicio"></Button>
+            android:text="Volver al Menu"></Button>
 
     </LinearLayout>
 

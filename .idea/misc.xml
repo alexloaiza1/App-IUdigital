@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/alex2/Desktop/App_IUDigital/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/alex2/Desktop/App_IUDigital/app/src/main/res/layout/activity_main.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/alex2/Desktop/App_IUDigital/app/src/main/res/layout/activity_menu.xml" value="0.2368659420289855" />
         <entry key="..\:/Users/alex2/Desktop/App_IUDigital/app/src/main/res/layout/activity_registro_usuario.xml" value="0.4" />
       </map>
     </option>
